@@ -298,6 +298,8 @@ def KSVM():
     num_correct = sum(int(a == y) for a, y in zip(predictions, test_y))
     print("The accuracy is %f "%(num_correct/len(test_y)))
     print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+
+    
 if __name__ == "__main__":
     #main()
     KSVM()
